@@ -12,6 +12,8 @@ body{
 .navbar{
 
     background-color: var(--gray);
+    transition: 0.5s;
+    transition-delay: 0.2s;
 
 }
 
@@ -20,6 +22,7 @@ body{
 .nav-link{
 
     color: var(--green);
+    margin-right: 20px;
 
 }
 
@@ -33,14 +36,16 @@ body{
       0 0 5px var(--green), /* Brilho branco */
       0 0 10px var(--green), 
       0 0 15px var(--green); /* Cor do brilho */
+    
 
 }
 
 .navbar-collapse a:hover{
 
-    border-bottom: solid 2px var(--green);
+    border: solid 2px var(--green);
+    border-radius: 10px;
     color: var(--white);
-    transition: 0.2s;
+    /* transition: 0.5s; */
     color: white; /* Cor do texto */
     text-shadow: 
       0 0 5px #fff, /* Brilho branco */
@@ -63,6 +68,12 @@ body{
 .navbar-toggler{
 
     background-color: var(--black);
-    border-color: var(--green);
+    /* border-color: var(--green); */
+    border-color: var(--green); /* Cor do texto */
+    text-shadow: 
+      0 0 5px var(--green), /* Brilho branco */
+      0 0 10px var(--green), 
+      0 0 15px var(--green); /* Cor do brilho */
+
 
 }
