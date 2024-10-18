@@ -1,0 +1,23 @@
+/* Body */
+
+body{
+
+    background-color: var(--black);
+
+}
+
+
+
+.navbar{
+
+    background-color: var(--gray);
+
+}
+
+
+
+.nav-link{
+
+    color: var(--green);
+
+}
