@@ -7,6 +7,7 @@ body{
 }
 
 
+/* Nav Bar */
 
 .navbar{
 
@@ -19,5 +20,49 @@ body{
 .nav-link{
 
     color: var(--green);
+
+}
+
+.navbar-collapse{
+
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    color: var(--green); /* Cor do texto */
+    text-shadow: 
+      0 0 5px var(--green), /* Brilho branco */
+      0 0 10px var(--green), 
+      0 0 15px var(--green); /* Cor do brilho */
+
+}
+
+.navbar-collapse a:hover{
+
+    border-bottom: solid 2px var(--green);
+    color: var(--white);
+    transition: 0.2s;
+    color: white; /* Cor do texto */
+    text-shadow: 
+      0 0 5px #fff, /* Brilho branco */
+      0 0 10px #fff, 
+      0 0 15px #ffffff; /* Cor do brilho */
+
+}
+
+.navbar-brand{
+
+    color: var(--white);
+    color: white; /* Cor do texto */
+    text-shadow: 
+      0 0 5px #fff, /* Brilho branco */
+      0 0 10px #fff, 
+      0 0 15px #ffffff; /* Cor do brilho */
+
+}
+
+.navbar-toggler{
+
+    background-color: var(--black);
+    border-color: var(--green);
 
 }
