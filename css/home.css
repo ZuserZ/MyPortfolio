@@ -2,7 +2,11 @@
 
 body{
 
-    background-color: var(--white);
+  background-color: var(--white);
+    /* background: url(../images/background.jpg); */
+  position: relative;
+  margin: 0;
+  height: 100vh; /*Altura da tela*/
 
 }
 
@@ -11,10 +15,12 @@ body{
 
 .navbar{
 
-    background-color: transparent;
-    transition: 0.5s;
-    transition-delay: 0.2s;
-    height: 85px;
+  position: fixed;
+  background-color: transparent;
+  transition: 0.5s;
+  transition-delay: 0.2s;
+  height: 85px;
+  z-index: 10;
 
 }
 
@@ -35,8 +41,13 @@ body{
     text-shadow: 
       0 0 5px var(--black), /* Brilho branco */
       0 0 10px var(--black), 
-      0 0 15px var(--black); /* Cor do brilho */
-    
+      0 0 15px var(--black); /* Cor do brilho */    
+
+}
+
+.navbar-collapse a{
+
+  transition: 0.3s;
 
 }
 
@@ -45,13 +56,19 @@ body{
     border-bottom: solid 2px var(--blue);
     border-radius: 4px;
     color: var(--blue);
-    transform: scale(1.05);
-    transition: 0.3s;
+    transform: scale(1.08);
+    /* transition: 0.3s; */
     color: var(--blue); /* Cor do texto */
     text-shadow: 
       0 0 5px var(--blue), /* Brilho branco */
       0 0 10px var(--blue), 
       0 0 15px var(--blue); /* Cor do brilho */
+
+}
+
+.navbar-collapse a:not(:hover){
+
+  transition-delay: 0.3s; /* Atraso ao sair do hover */
 
 }
 
@@ -74,8 +91,9 @@ body{
 
     color: var(--blue);
     color: var(--blue); /* Cor do texto */
-    border-bottom: solid 2px var(--gray);
+    border-bottom: solid 2px var(--blue);
     border-radius: 5px;
+    transform: scale(1.05);
     transition: 0.3s;
     text-shadow: 
       0 0 5px var(--blue), /* Brilho branco */
@@ -97,4 +115,18 @@ body{
       0 0 15px var(--green); /* Cor do brilho */
 
 
+}
+
+
+.div1{
+  position: absolute; /*Permite posicionamento livre*/
+  top: 0; /* Posiciona no topo */
+  left: 0; /* Posiciona à direita */
+  background-color: transparent;    
+  text-align: center;
+  width: 0;
+  height: 0;
+  border-top: 500px solid transparent;
+  border-bottom: 500px solid transparent;
+  border-left:  1000px solid #4CAF50;
 }
