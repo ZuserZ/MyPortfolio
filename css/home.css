@@ -2,11 +2,11 @@
 
 body{
 
-  background-color: var(--white);
+  background-color: var(--black);
     /* background: url(../images/background.jpg); */
   position: relative;
   margin: 0;
-  height: 100vh; /*Altura da tela*/
+   /*Altura da tela*/
 
 }
 
@@ -117,16 +117,28 @@ body{
 
 }
 
-
 .div1{
+  background-color: transparent !important;
   position: absolute; /*Permite posicionamento livre*/
   top: 0; /* Posiciona no topo */
-  left: 0; /* Posiciona à direita */
+  left: 40%; /* Posiciona à direita */
   background-color: transparent;    
   text-align: center;
   width: 0;
   height: 0;
-  border-top: 500px solid transparent;
-  border-bottom: 500px solid transparent;
-  border-left:  1000px solid #4CAF50;
+  border-top: 50vh solid transparent;
+  border-bottom: 50vh solid transparent;
+  border-left:  20vw solid var(--white);
 }
+
+.div2{
+
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: var(--white);
+  height: 100vh;
+  width: 40%;
+
+}
+
